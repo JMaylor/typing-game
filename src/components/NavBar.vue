@@ -9,37 +9,28 @@
 			/>
 		</template>
 	</Menubar>
-	<router-view />
 </template>
 
 <script>
 	export default {
-		components: {},
 		data() {
 			return {
 				items: [
 					{
 						label: "Play",
 						icon: "pi pi-fw pi-pencil",
-						to: "/"
+            to: '/'
 					},
 					{
 						label: "About",
 						icon: "pi pi-fw pi-info-circle",
-						to: "About"
-					}
+            to: 'About'
+					},
 				]
 			};
 		}
 	};
 </script>
 
-<style>
-	#app {
-		font-family: Avenir, Helvetica, Arial, sans-serif;
-		-webkit-font-smoothing: antialiased;
-		-moz-osx-font-smoothing: grayscale;
-		text-align: center;
-		color: #2c3e50;
-	}
+<style scoped>
 </style>
