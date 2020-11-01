@@ -1,5 +1,17 @@
 <template>
 	<div>
+		<div class="p-grid p-jc-center p-my-3">
+			<div class="p-col-12 p-sm-10 p-md-8 p-lg-6">
+				<div class="box p-shadow-6">
+					Instructions: <br />
+					1. Start a new game.<br />
+          2. Start typing the word in bold.<br />
+          3. Press space after typing a word to move onto the next one.<br />
+          4. The next words are shown to the left.<br />
+          5. Words you just typed are shown to the right.
+				</div>
+			</div>
+		</div>
 		<Button
 			:label="gameRunning ? 'End Game' : 'New Game'"
 			@click="toggleGame"
@@ -15,7 +27,9 @@
 		<div class="p-grid p-jc-center p-my-3">
 			<div class="p-col-12 p-sm-10 p-md-8 p-lg-6">
 				<ProgressBar :value="progressPercentage"
-					><span style="color: white">Time Remaining: {{ timeRemaining }}</span></ProgressBar
+					><span style="color: white"
+						>Time Remaining: {{ timeRemaining }}</span
+					></ProgressBar
 				>
 			</div>
 		</div>
