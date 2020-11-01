@@ -20,7 +20,7 @@
 				items: [
 					{
 						label: "Play",
-						icon: "pi pi-fw pi-pencil",
+						icon: "pi pi-fw pi-desktop",
 						to: "/"
 					},
 					{
